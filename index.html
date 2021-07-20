@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Healthy Life - Calculadora IMC</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <h1 id='titulo'>HEALTHY LIFE</h1>
+  </header>
+  <br>
+  <h2><b>CALCULADORA ANTROPOMÉTRICA DE INDICE DE MASA CORPORAL (IMC)</b></h2>
+  <div class="container">
+    <div class="row">
+      <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()">
+      <span id="peso-val">20 kg</span>
+    </div>
+    <div class="row">
+      <input type="range" min="100" max="250" value="100" id="altura" oninput="calcular()">
+      <span id="altura-val">100 cm</span>
+    </div>
+
+    <p id="resultado">20.0</p>
+    <p id="category">Peso Normal</p>
+  </div>
+
+  <!--Script-->
+  <script src="calculoIMC.js"></script>
+</body>
+
+</html>
